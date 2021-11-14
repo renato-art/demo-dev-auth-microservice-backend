@@ -1,7 +1,7 @@
 <div align="center">
     <h1>Auth system</h1>
     <h4>Auth system microservice backend demonstration using factory pattern<h4>
-    ![zarak-khan-Ve2SL0zMhWk-unsplash](https://raw.githubusercontent.com/andela-mnzomo/project-dream-team-one/master/flask-crud-part-one.jpg)
+    <img src="https://raw.githubusercontent.com/andela-mnzomo/project-dream-team-one/master/flask-crud-part-one.jpg" alt="Flask image">
 </div>
 
 ## Architecture
