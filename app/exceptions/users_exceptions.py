@@ -30,8 +30,7 @@ class EmptyUserException(Exception):
 class IdIsNotInstanceOfTypeDigitException(CustomizedException):
 
     def __init__(self, message):
-        super.__init__(message)
-    
+        CustomizedException.__init__(self, message)
 
 """
     Class created to raise an exception when the
@@ -40,5 +39,5 @@ class IdIsNotInstanceOfTypeDigitException(CustomizedException):
 class NonexistentUserException(CustomizedException):
 
     def __init__(self, message):
-        super.__init__(message)
+        CustomizedException.__init__(self, message)
     
