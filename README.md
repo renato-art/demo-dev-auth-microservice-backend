@@ -1,7 +1,7 @@
 <div align="center">
     <h1>Auth system</h1>
     <h4>Auth system microservice backend demonstration using factory pattern<h4>
-    ![zarak-khan-Ve2SL0zMhWk-unsplash](https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/TncySwPMW1Tizu3Uv84P7bmU/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882)
+    ![zarak-khan-Ve2SL0zMhWk-unsplash](https://raw.githubusercontent.com/andela-mnzomo/project-dream-team-one/master/flask-crud-part-one.jpg)
 </div>
 
 ## Architecture
