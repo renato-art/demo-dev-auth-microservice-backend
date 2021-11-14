@@ -45,6 +45,12 @@ Directory tree based on the factory design pattern, used to serve multiple packa
 python -m venv venv
 ```
 
+* Enter in the virtual environment with the command:
+
+```
+source venv/bin/activate
+```
+
 * Execute the command below to install the dependencies of the project:
 
 ```
@@ -52,12 +58,6 @@ pip install -r requirements.txt
 ```
 
 ## Run
-
-Enter in the virtual environment with the command:
-
-```
-source venv/bin/activate
-```
 
 Run the flask application with the command:
 
