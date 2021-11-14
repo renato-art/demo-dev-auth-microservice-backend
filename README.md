@@ -57,7 +57,81 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Installing and configuring the database
+
+* Upgrading and updating the system:
+
+```
+sudo apt update && sudo apt upgrade
+```
+
+* Installing the Postgresql:
+
+```
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+```
+
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+```
+
+```
+sudo apt update
+```
+
+```
+sudo apt -y install postgresql
+```
+
+* Accessing the Postgresql:
+
+```
+sudo -u postgres psql
+```
+
+* Creating a new user:
+
+In this step you can modify the user and password variables inside the postgres command below.
+
+```
+CREATE USER user_example SUPERUSER CREATEROLE CREATEDB PASSWORD 'example@1234';
+```
+
+* Creating a database:
+
+In this step you need to change the `user_name` to the name of the user created in the last step.
+
+```
+CREATE DATABASE user_name;
+```
+
+Now you need to exit the psql terminal with the command `exit`, and execute the command `psql` to login into the database with your new user.
+
+* Creating the database for the project:
+
+Create a new database using the code below, and change the `database_name` with a name of your preference.
+
+```
+CREATE DATABASE database_name;
+```
+
+* Creating the users table:
+
+Now you need to copy the code inside the `schema.sql` file and past into the terminal to create the users table with the right columns.
+
 ## Run
+
+Create a `.env` file inside the project root folder, copy the `.env.example` environment variables, and put the respective values.
+
+Example:
+
+```
+FLASK_ENV=development 
+DB_HOST=localhost
+DB_NAME=database_name
+DB_USER=user_example
+DB_PASSWORD=example@1234
+```
 
 Run the flask application with the command:
 
